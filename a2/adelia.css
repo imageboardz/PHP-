@@ -1,0 +1,185 @@
+/* adelia.css */
+
+/* General Styles */
+html, body {
+    font-size: 12pt;
+    background: #EEF2FF;
+    color: #000000;
+    margin: 0;
+    padding: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    background: inherit;
+    color: #34345C;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a:visited {
+    background: inherit;
+    color: #34345C;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a:hover {
+    color: #DD0000;
+    background: inherit;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+hr {
+    color: #34345C;
+    background-image: linear-gradient(to right, rgba(238,242,255,1), rgba(52,52,92,0.75), rgba(238,242,255,1));
+    border: none;
+    height: 1px;
+}
+
+.adminbar {
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+.logo {
+    clear: both;
+    text-align: center;
+    font-size: 24pt;
+    color: #AF0A0F;
+    width: 100%;
+}
+
+.postarea {
+    background: inherit;
+    text-align: center;
+}
+
+.postform label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.postform input[type="text"],
+.postform textarea {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.postform input[type="submit"] {
+    padding: 10px 20px;
+    background: #34345C;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.postform input[type="submit"]:hover {
+    background: #DD0000;
+}
+
+.row1 {
+    font-size: 12px;
+    color: #000000;
+    padding: 10px;
+    background: #9AD2F6;
+}
+
+.replymode {
+    background-color: #0010E0;
+    color: #FFFFFF;
+    padding: 10px;
+    font-size: 14px;
+    text-align: left;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.replymode a {
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+
+.replymode a:hover {
+    color: #DD0000;
+}
+
+.reply {
+    background: #D6DAF0;
+    color: #000000;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.pagination {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.pagination a, .pagination span {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 0 2px;
+    border: 1px solid #ccc;
+    text-decoration: none;
+    color: #34345C;
+}
+
+.pagination .current {
+    background: #34345C;
+    color: #fff;
+    border-color: #34345C;
+}
+
+.pagination .disabled {
+    color: #999;
+    border-color: #ccc;
+}
+
+/* Expandable Image Styling */
+.expandable-image {
+    cursor: pointer;
+    transition: transform 0.3s ease, max-height 0.3s ease;
+    max-width: 100%;
+    height: auto;
+}
+
+.expandable-image.expanded {
+    width: auto !important;
+    height: auto !important;
+    max-height: 90vh;
+    max-width: 90vw;
+    transform: scale(1.05);
+}
+
+.thread-image, .reply-image {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 10px;
+}
+
+.thread-image img, .reply-image img {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    max-width: 250px;
+    height: auto;
+}
+
+/* Optional Enhancement: Back Button Styling */
+.back-button {
+    background-color: #DD0000;
+    color: #FFFFFF;
+    padding: 5px 10px;
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+.back-button:hover {
+    background-color: #AA0000;
+}
+
